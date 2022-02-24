@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["Arjun KayalMoni <arjun.umathanu@gmail.com>"]
+description = "Async SQLModel and Pydantic learning"
+name = "async_sqlmodel_api"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+asyncpg = "^0.25.0"
+fastapi = "^0.73.0"
+httpx = "^0.22.0"
+pydantic = {extras = ["dotenv"], version = "^1.9.0"}
+python = "^3.10"
+sqlmodel = "^0.0.6"
+uvicorn = "^0.17.4"
+requests = "^2.27.1"
+nest-asyncio = "^1.5.4"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+bandit = "^1.7.2"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+mypy = "^0.931"
+pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
+safety = "^1.10.3"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
